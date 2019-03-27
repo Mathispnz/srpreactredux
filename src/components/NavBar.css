@@ -1,0 +1,29 @@
+.navbar-container {
+    width: 100%;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
+    box-shadow: 0 2px 2px #d9d9d9;
+}
+
+.navbar {
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+    padding: 15px 0px;
+} 
+
+.navbar a {
+    padding: 0 20px;
+    font-family: Futura;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #4c4c4c;
+    font-size: 16px;
+    border-right: 1px solid black;
+    vertical-align: baseline;
+}
+
+.navbar a:hover {
+    color: #f71073;
+}

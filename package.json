@@ -3,9 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "file-loader": "^3.0.1",
+    "node-sass": "^4.11.0",
+    "nodesass": "0.0.2-security",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-scripts": "2.1.8"
+    "react-router-dom": "^4.4.0",
+    "react-scripts": "2.1.8",
+    "url-loader": "^1.1.2"
   },
   "scripts": {
     "start": "react-scripts start",

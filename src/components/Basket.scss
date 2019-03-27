@@ -1,0 +1,26 @@
+.whole-cont {
+    padding: 50px 0px;
+} .article-container {
+    padding: 10px 0px;
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 1;
+    border-bottom: 1px solid lightgrey;
+}.image-width {
+    margin: auto;
+    height:80px;
+    grid-column: 1;
+    grid-row: 1;
+} .text-rose {
+    grid-column: 2;
+    grid-row: 1;
+    margin: auto;
+    padding: 0px 30px;
+} p {
+    grid-column: 3;
+    grid-row: 1;
+    margin: auto;
+    padding: 0px 30px;
+}

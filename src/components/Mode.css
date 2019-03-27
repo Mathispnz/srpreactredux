@@ -1,0 +1,25 @@
+.mode {
+    padding: 50px 0px;
+    margin: 0 auto;
+    max-width: 1100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.vente-bandeau-container {
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.vente-bandeau-container:hover {
+    transform: scale(1.02);
+    transition: 0.5s;
+}
+
+.vente-image {
+    width: 300px;
+    height: 300px;
+}
