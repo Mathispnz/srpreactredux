@@ -18,7 +18,7 @@ export default class Header extends Component {
             <a href="#"><i className="far fa-sticky-note"></i></a>
             <a href="#"><i className="far fa-question-circle"></i></a>
             <Link to="/login"><i className="far fa-user-circle"></i></Link>
-            <Link to="/basket"><i class="fas fa-shopping-basket"></i></Link>
+            <Link to="/basket"><i className="fas fa-shopping-basket"></i></Link>
         </div>
       </div>
     )

@@ -34,22 +34,27 @@ export default class Mode extends Component {
                     url: "/venten006"
                 },
                 {
-                    image: "./images/49398_bandeau_desktop_FR 7.jpg"
+                    image: "./images/49398_bandeau_desktop_FR 7.jpg",
+                    url: "/venten006"
                 },
                 {
-                    image: "./images/49398_bandeau_desktop_FR 8.jpg"
+                    image: "./images/49398_bandeau_desktop_FR 8.jpg",
+                    url: "/venten006"
                 },
                 {
-                    image: "./images/49398_bandeau_desktop_FR 9.jpg"
+                    image: "./images/49398_bandeau_desktop_FR 9.jpg",
+                    url: "/venten006"
                 },
                 {
-                    image: "./images/49398_bandeau_desktop_FR 10.jpg"
+                    image: "./images/49398_bandeau_desktop_FR 10.jpg",
+                    url: "/venten006"
                 },
                 {
-                    image: "./images/49398_bandeau_desktop_FR 11.jpg"
+                    image: "./images/49398_bandeau_desktop_FR 11.jpg",
+                    url: "/venten006"
                 },
                 {
-                    image: "./images/Bandeau FR.jpg"
+                    image: "./images/Bandeau FR.jpg" 
                 }
 
             ]

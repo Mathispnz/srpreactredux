@@ -38,16 +38,18 @@ export default class Form extends Component {
             </label>
 
             <label className="form-name"> URL:
-                 <input onChange={this.handleChange} type='text' value={this.state.url} name="image" />
+                 <input onChange={this.handleChange} type='text' value={this.state.url} name="url" />
             </label>
 
             <label className="form-name"> Description:
-                 <input onChange={this.handleChange} type='text' value={this.state.description} name="image" />
+                 <input onChange={this.handleChange} type='text' value={this.state.description} name="description" />
             </label>
 
             <label className="form-name"> Stock:
                 <input type='number' onChange={this.handleChange} value={this.state.stock} />
             </label>
+
+            <button>Submit</button>
         </form>
       </div>
     )

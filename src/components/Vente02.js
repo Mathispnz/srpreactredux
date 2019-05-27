@@ -1,41 +1,59 @@
 import React, { Component } from 'react';
 import './Vente02.scss';
-import { stringify } from 'querystring';
 import { Link } from 'react-router-dom';
 
-export default class Vente02 extends Component {
-    constructor(props) {
-        super(props);
+import { connect } from 'react-redux';
+import { getJewels, updateJewels } from './actions/jewelsActions';
+import PropTypes from 'prop-types';
 
-        this.state = {
+class Vente02 extends Component {
 
-        }
+    componentDidMount() {
+        this.props.getJewels();
     }
 
+    onBasketClick = inBasket => {
+        console.log(inBasket);
+        inBasket = true;
+        console.log(inBasket);
+        this.props.updateJewels(inBasket);
+    }
 
     render() {
-        const { bijoux } = this.props;
+        const { jewels } = this.props.jewel;
 
         return (
+
         <div className="whole-cont">
             <Link className="go-back" to="/mode">Retourner aux ventes</Link>
             <div className="vente-gen">
-            {bijoux.map(oneBijou => {
+            {jewels.map(oneBijou => {
                 return(
-                    <div className="vente-sing">
-                     
+                    <div key={oneBijou.id} className="vente-sing">
                         <img src={oneBijou.image} />
 
                         <p className="text-rose">{oneBijou.description}</p>
                         <p>{oneBijou.price} €</p>
                         <p>Il reste {oneBijou.stock} exemplaires en stock !</p>
                         <p>{oneBijou.availability}</p>
-                        <button onClick={this.props.handleChange} className="basket">Ajouter au panier</button>
+                        <button onClick={this.onBasketClick.bind(this, oneBijou.inBasket)} className="basket">Ajouter au panier</button>
                     </div>
                 )
             })}
             </div>
         </div>
+
         )
     }
 }
+
+Vente02.propTypes = {
+    getJewels: PropTypes.func.isRequired,
+    jewel: PropTypes.object.isRequired
+}
+
+const mapStateToProps = (state) => ({
+    jewel: state.jewel
+})
+
+export default connect(mapStateToProps, { getJewels, updateJewels })(Vente02);

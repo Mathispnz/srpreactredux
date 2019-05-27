@@ -1,0 +1,21 @@
+@mixin border {
+    border: 1px solid black;
+    margin: 5px;
+}
+
+.home-page {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 0px;
+} .big-product {
+    @include border;
+    height: 304px;
+    width: 621px;
+} .little-product, .little-pub {
+    @include border;
+    height: 304px;
+    width: 304px;
+}
